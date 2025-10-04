@@ -1,42 +1,34 @@
-# Operation People’s Veto: Command Injection Challenge
-
+# Operation People’s Veto: XSSpress Yourself!
 Welcome, Autoveto Sentinel!
 
-The midnight coup is underway, and the Ministry of Digital Infrastructure is hiding a backdoor in their command interface. Your mission: infiltrate, exploit, and broadcast the truth before the ESIEE rebrand goes live!
+The Ministry of Public Messaging is about to unleash a wave of propaganda, but their web team cut corners and left a script-shaped hole in their defenses. Your mission: slip your payload past their filters, hijack the message, and expose the truth—one pop-up at a time!
 
 ## Mission Brief
 
-The privatizers have left a vulnerable endpoint somewhere in the system. Your job is to:
+The coup plotters are using a vulnerable web app to sway public opinion. Your job is to:
 
-1. **Recon the container** — What tools are available? What’s missing? Every detail counts.
-2. **Find the command injection vulnerability** — Can you make the system run your commands?
-3. **Get a reverse shell** — Connect back to your Sentinel HQ and seize control!
-4. **Capture the flag** — The flag is the output of the Java version running on the target.
+1. **Launch the lab:**
+	```sh
+	chmod +x run_lab.sh
+	./run_lab.sh
+	```
+2. **Find the XSS vulnerability** — Can you make the app say whatever you want?
+3. **Trigger your payload** — Prove you can execute JavaScript in the browser.
+4. **Capture the flag**
+There are **three flags** to find in this challenge:
 
-Every step you take rolls back the coup. Succeed, and ESIPE remains free!
-
-
-## How to Launch the Lab
-
-To begin your mission, you need to start the lab environment:
-
-```sh
-chmod +x run_lab.sh
-./run_lab.sh
-```
-
-This will launch the vulnerable container for your exploitation. Make sure Docker is running!
-
-## Hints & Resources
-
-- **Command Injection 101:**
-	- [OWASP Command Injection](https://owasp.org/www-community/attacks/Command_Injection)
-	- [PayloadsAllTheThings: Command Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Command%20Injection)
-- **Reverse Shells:**
-	- [revshells.com](https://www.revshells.com/)
-	- [GTFOBins: BusyBox](https://gtfobins.github.io/gtfobins/busybox/)
-- **Container Recon:**
-	- [BusyBox Documentation](https://busybox.net/downloads/BusyBox.html)
-	- [Docker Cheat Sheet](https://dockerlabs.collabnix.com/docker/cheatsheet/)
+1. **What kind of XSS are you working with?**
+2. **What is the line of code causing it?**
+	- Find the exact line in the source code responsible for the vulnerability. The flag is the base64-encoded version of this line! (get into the docker)
+3. **What other vulnerability could be used to exploit this XSS?**
 
 
+
+## Things to Read Before you hack
+
+- [OWASP: Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
+
+Submit all three flags to fully liberate the Ministry’s message board!
+Every alert box you pop is a blow against the coup!
+
+**The fate of ESIPE’s digital airwaves is in your hands. Go forth and XSSpress yourself!**
