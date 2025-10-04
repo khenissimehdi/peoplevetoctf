@@ -9,5 +9,5 @@ echo "Pulling Docker image..."
 docker pull $image_name
 
 echo "Launching Docker container..."
-docker run -ti --ulimit nofile=8096:8096 -p $host_port:$container_port -v "$db_path":/skf/Database.db $image_name
+docker run -ti --ulimit nofile=8096:8096 -p $host_port:$container_port $image_name
 echo "Container launched. Access the application at http://localhost:$host_port"
