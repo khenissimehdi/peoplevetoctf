@@ -15,7 +15,7 @@ The threat actors have upgraded their security, but their logic is flawed. Your 
 	```
 2. **Analyze the authentication flow.**
 3. **Find and exploit the logic bug to bypass authentication!**
-4. **Capture the flag and help roll back the coup!**
+4. **Capture the flag and help roll back the coup!** THE FLAG IS ROUTE
 
 ## To Read Before Starting
 
