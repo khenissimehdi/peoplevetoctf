@@ -18,7 +18,8 @@ The coup plotters are using a vulnerable web app to sway public opinion. Your jo
 There are **two flags** to find in this challenge:
 	1. **What kind of XSS are you working with?**
 	2. **What is the line of code causing it?**
-		- Find the exact line in the source code responsible for the vulnerability. The flag is the base64-encoded version of this line! (get into the docker)
+		
+		Find the exact line in the source code responsible for the vulnerability. The flag is the base64-encoded version of this line! (get into the docker)
 
 ## Things to Read Before you hack
 
