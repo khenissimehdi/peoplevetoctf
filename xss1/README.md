@@ -15,14 +15,10 @@ The coup plotters are using a vulnerable web app to sway public opinion. Your jo
 2. **Find the XSS vulnerability** — Can you make the app say whatever you want?
 3. **Trigger your payload** — Prove you can execute JavaScript in the browser.
 4. **Capture the flag**
-There are **three flags** to find in this challenge:
-
-1. **What kind of XSS are you working with?**
-2. **What is the line of code causing it?**
-	- Find the exact line in the source code responsible for the vulnerability. The flag is the base64-encoded version of this line! (get into the docker)
-3. **What other vulnerability could be used to exploit this XSS?**
-
-
+There are **two flags** to find in this challenge:
+	1. **What kind of XSS are you working with?**
+	2. **What is the line of code causing it?**
+		- Find the exact line in the source code responsible for the vulnerability. The flag is the base64-encoded version of this line! (get into the docker)
 
 ## Things to Read Before you hack
 
